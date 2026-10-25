@@ -2,14 +2,14 @@ import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
     const linkClass = ({ isActive }: { isActive: boolean }) =>
-        `rounded pl-2 py-2 transition flex flex-row items-center gap-3 ${
+        `rounded p-3 pr-16 py-2 transition flex flex-row items-center gap-3 ${
             isActive
                 ? "bg-primary-light text-primary "
                 : "text-gray-700 hover:bg-gray-200"
         }`;
 
     return (
-        <nav className="font-semibold flex flex-col gap-1 p-3 w-1/6 bg-secondary border-2 border-border">
+        <nav className="font-semibold flex flex-col gap-1 p-3 min-w-fit bg-secondary border-2 border-border">
             <NavLink to="/" className={linkClass} end>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
