@@ -5,12 +5,12 @@ import AboutPage from "./pages/AboutPage";
 
 export default function App() {
 	return (
-		<div className="min-h-screen bg-gray-100">
+		<div className="min-h-screen bg-background flex flex-row">
 			<NavBar />
 			<main className="flex justify-center p-8">
 				<Routes>
 					<Route path="/" element={<HomePage />} />
-					<Route path="/about" element={<AboutPage />} />
+					<Route path="/sets" element={<AboutPage />} />
 				</Routes>
 			</main>
 		</div>
